@@ -27,9 +27,6 @@ class KillsCommand extends PluginCommand
     /**
      * KillsCommand constructor.
      * @param Main $plugin
-     * @param $cmdName
-     * @param $description
-     * @param $aliases
      */
     public function __construct(Main $plugin, $cmdName, $description, $aliases)
     {
