@@ -4,21 +4,12 @@
 
  Don't forget to read the description before using this plugin! 
 
- 📜Description: You can create races tags. It has a menu where you can select to buy or equip the tags. 
+ 📜Description: You can create unlimited races. When you select a Race you will have it permanently with effects you will not be able to change it so think about when you select a Race. 
 
 
- **⚙️TODO**
+ **📖How to create Races?**
 
-```
- x EconomyAPI
-```
-
-
-
-
- **📖How to create Races!**
-
- Go to the races.yml file which is located in the plugin_data/CustomTags directory
+ Go to the races.yml file which is located in the plugin_data/RacesGUI directory
 
 ```php
 # Example
