@@ -56,11 +56,10 @@ races:
  **📚What does the plugin have?**
 
  - [x] create unlimited races
- - [x] tag shop
- - [x] custom menu
+ - [x] GUI Selector/Evolve Menu
+ - [x] Custom Messages
  - [x] chat format
- - [x] save the tag 
- - [x] economyAPI support
+ - [x] Support JSON 
 
 
 
