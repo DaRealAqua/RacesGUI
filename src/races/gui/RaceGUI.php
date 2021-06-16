@@ -72,8 +72,6 @@ class RaceGUI{
     /**
      * @param Player $player
      * @param string $raceId
-     * @param $levelUp
-     * @param $data
      */
     public function sendEvolve(Player $player, string $raceId, $levelUp, $data){
         $raceCfg = $this->plugin->getRacesCfg();
