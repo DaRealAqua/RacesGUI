@@ -4,8 +4,7 @@
 
  Don't forget to read the description before using this plugin! 
 
- 📜Description: You can create unlimited races. When you select a Race you will have it permanently with effects you will not be able to change it so think about when you select a Race. 
-
+ 📜Description: You can create unlimited races. When you select a Race you will have it permanently with effect's you will not be able to change it so think about when you select a Race. To upgrade your Race effect's, type /evolve. You will need a sum kills to upgrade the effect's.
 
  **📖How to create Races?**
 
