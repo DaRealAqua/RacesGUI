@@ -89,15 +89,16 @@ class RaceGUI{
             $this->data = $data;
 
             foreach ($levelUp as $up) {
-                $price = ($up["item"]["price"] * $race->getEffectLevel($player));
+                $neededKills = ($up["item"]["price"] * $race->getEffectLevel($player));
 
                 if($race->getEffectLevel($player) === 0){
-                    $price = $up["item"]["price"];
+                    $neededKills = $up["item"]["price"];
                 }
-
+                
+                $currentKills = $race->getCurrentKills($player);
                 $inventory->setItem(2, Item::get($up["item"]["id"], $up["item"]["meta"], 1)
                     ->setCustomName($up["item"]["customName"])
-                    ->setLore([str_replace(["{price}", "{line}"], [$price, "\n"], $up["item"]["lore"])]));
+                    ->setLore([str_replace(["{currentKills}", "{neededKills}", "{line}"], [$currentKills, $neededKills, "\n"], $up["item"]["lore"])]));
             }
         }
         $menu->setListener(InvMenu::readonly(function(InvMenuTransaction $transaction) : void {
