@@ -39,7 +39,7 @@ races:
 
  **Subscribe to my Channel!**
 
- [YouTube Channel](http://youtube.lexuspe.xyz)
+ [YouTube Channel](https://youtube.com/c/AlexItz16%E3%83%84Nspe)
 
 
 
