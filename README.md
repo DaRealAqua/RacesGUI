@@ -49,7 +49,8 @@ races:
 
  [Levania Discord](https://discord.gg/Axa33MgXJ9)
 
- 
+ **📝TODO LIST**
+ - [] SOON
 
 
  **📚What does the plugin have?**
@@ -58,7 +59,7 @@ races:
  - [x] GUI Selector/Evolve Menu
  - [x] Custom Messages
  - [x] Chat Format
- - [x] Support JSON 
+ - [x] Support JSON
 
 
 
