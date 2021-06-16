@@ -31,8 +31,6 @@ final class ClosurePlayerNetworkHandler implements PlayerNetworkHandler {
 
 	/**
 	 * @param Closure $creator
-	 *
-	 * @phpstan-param Closure(Closure) : NetworkStackLatencyEntry
 	 */
 	public function __construct(Closure $creator){
 		$this->creator = $creator;
