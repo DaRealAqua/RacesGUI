@@ -32,7 +32,6 @@ class Race{
     /**
      * @param Player $player
      * @param string $race
-     * @param $data
      */
     public function setRace(Player $player, string $race, $data){
         $this->plugin->getPlayersCfg()->setNested($player->getName().".race", strtolower($race));
