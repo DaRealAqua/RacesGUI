@@ -56,7 +56,7 @@ races:
           meta: 0
           price: 3
           customName: "§r§l§eAngel§r§6 Evolve§r"
-          lore: "§r§7This Cost: §r{currentKills}/{neededKills} §7Kills"
+          lore: "§r§7Kills: §r{currentKills}/{neededKills}"
   Human:
     name: "§r§l§aHuman§r"
     gui:
@@ -78,7 +78,7 @@ races:
           meta: 0
           price: 2
           customName: "§r§l§aHuman§r§6 Evolve§r"
-          lore: "§r§7This Cost: §r{currentKills}/{neededKills} §7Kills"
+          lore: "§r§7Kills: §r{currentKills}/{neededKills}"
   Demon:
     name: "§r§l§cDemon§r"
     gui:
@@ -100,4 +100,4 @@ races:
           meta: 0
           price: 4
           customName: "§r§l§cDemon§r§6 Evolve§r"
-          lore: "§r§7This Cost: §r{currentKills}/{neededKills} §7Kills"
+          lore: "§r§7Kills: §r{currentKills}/{neededKills}"
