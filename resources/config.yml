@@ -1,0 +1,38 @@
+# This plugin was made by DaRealAqua
+#
+# YouTube: DaRealAqua
+# GitHub: @DaRealAqua
+# Discord: @DaRealAqua#9324
+# Twitter: @DaRealAqua_
+# Server Twitter: @Levania_Network
+# Server Discord: http://discord.levania.eu/
+
+# Prefix.
+prefix: "§8[§6Races§8]§r§7"
+
+# Chat Format
+chat-format: "{race_name} {player_name}"
+
+# Command
+command:
+  evolve:
+    # Cmd Evolve
+    name: evolve
+    # Cmd Description
+    description: "Races Plugin by @DaRealAqua."
+    # Cmd Aliases
+    aliases: ["ev"]
+  race:
+    # Cmd Race
+    name: race
+    # Cmd Description
+    description: "Races Plugin by @DaRealAqua."
+    # Cmd Aliases
+    aliases: ["class"]
+  kills:
+    # Cmd Kills
+    name: kills
+    # Cmd Description
+    description: "Races Plugin by @DaRealAqua."
+    # Cmd Aliases
+    aliases: ["mykills"]

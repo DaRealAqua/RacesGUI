@@ -1,0 +1,103 @@
+#
+# Effects ID List:
+# Speed => 1
+# Slowness => 2
+# Haste	haste => 3
+# Mining Fatigue => 4
+# Strength =>  5
+# Instant Health => 6
+# Instant Damage => 7
+# Jump Boost => 8
+# Nausea => 9
+# Regeneration => 10
+# Resistance => 11
+# Fire Resistance => 12
+# Water Breathing => 13
+# Invisibility => 14
+# Blindness => 15
+# Night Vision => 16
+# Hunger => 17
+# Weakness => 18
+# Poison => 19
+# Wither => 20
+# Health Boost => 21
+# Absorption => 22
+# Saturation => saturation	23
+# Levitation => levitation	24
+# Fatal Poison => 25
+# Conduit Power => 26
+# Slow Falling => 27
+
+# RaceGUI Title
+gui:
+  selector: "Select a Race"
+  evolve: "Click to Evolve"
+
+# Registered Races
+races:
+  Angel:
+    name: "§r§l§eAngel§r"
+    gui:
+      item:
+        place: 0
+        id: 276
+        meta: 0
+        customName: "§r§l§eAngel§r§7 (Right Click)§r"
+        lore: "§r§7You get the §eAngel §7Power."
+    effect:
+      id: 8
+      duration: 3
+      visible: false
+      maxLevel: 5
+    levelUp:
+      gui:
+        item:
+          id: 276
+          meta: 0
+          price: 3
+          customName: "§r§l§eAngel§r§6 Evolve§r"
+          lore: "§r§7This Cost: §r{price} §7Kills"
+  Human:
+    name: "§r§l§aHuman§r"
+    gui:
+      item:
+        place: 1
+        id: 277
+        meta: 0
+        customName: "§r§l§aHuman§r§7 (Right Click)§r"
+        lore: "§r§7You get the §aHuman §7Power."
+    effect:
+      id: 5
+      duration: 3
+      visible: false
+      maxLevel: 5
+    levelUp:
+      gui:
+        item:
+          id: 277
+          meta: 0
+          price: 2
+          customName: "§r§l§aHuman§r§6 Evolve§r"
+          lore: "§r§7This Cost: §r{price} §7Kills"
+  Demon:
+    name: "§r§l§cDemon§r"
+    gui:
+      item:
+        place: 2
+        id: 278
+        meta: 0
+        customName: "§r§l§cDemon§r§7 (Right Click)§r"
+        lore: "§r§7You get the §cDemon §7Power."
+    effect:
+      id: 1
+      duration: 3
+      visible: false
+      maxLevel: 5
+    levelUp:
+      gui:
+        item:
+          id: 278
+          meta: 0
+          price: 4
+          customName: "§r§l§cDemon§r§6 Evolve§r"
+          lore: "§r§7This Cost: §r{price} §7Kills"
