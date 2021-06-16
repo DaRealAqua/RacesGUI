@@ -34,7 +34,7 @@ races:
           meta: 0
           price: 3
           customName: "§r§l§bDaRealAqua§r§6 Evolve§r"
-          lore: "§r§7This Cost: §r{price} §7Kills"
+          lore: "§r§7This Cost: §r{currentKills}/{neededKills} §7Kills"
 ```
 
  **Subscribe to my Channel!**
