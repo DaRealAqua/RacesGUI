@@ -49,8 +49,9 @@ races:
 
  [Levania Discord](https://discord.gg/Axa33MgXJ9)
 
+
  **📝TODO LIST**
- - [] SOON
+ - [ ] SOON
 
 
  **📚What does the plugin have?**
