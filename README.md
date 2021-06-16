@@ -54,7 +54,7 @@ races:
 
  **📚What does the plugin have?**
 
- - [x] Unlimited Races
+ - [x] Create Unlimited Races
  - [x] GUI Selector/Evolve Menu
  - [x] Custom Messages
  - [x] Chat Format
