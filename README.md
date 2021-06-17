@@ -1,4 +1,4 @@
- # RACE GUI PLUGIN
+ # RACES GUI PLUGIN
 
 <img src="https://discordapp.com/api/guilds/646732504744853518/widget.png?style=shield" alt="AquaDevs Discord"/>
 
