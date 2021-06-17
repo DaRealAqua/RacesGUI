@@ -40,7 +40,7 @@ races:
 
  **📝TODO LIST**
  
- - [ ] SOON
+ - [ ] CHANGE RACE
 
 
  **📚What does the plugin have?**
