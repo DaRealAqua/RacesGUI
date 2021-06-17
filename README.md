@@ -37,20 +37,9 @@ races:
           lore: "§r§7Kills: §r{currentKills}/{neededKills}"
 ```
 
- **Subscribe to my Channel!**
-
- [YouTube Channel](https://youtube.com/c/AlexItz16%E3%83%84Nspe)
-
-
-
- **Join my Discord Servers!**
-
- [AquaDevs Discord](https://discord.gg/5pxFZHmsC7)
-
- [Levania Discord](https://discord.gg/Axa33MgXJ9)
-
 
  **📝TODO LIST**
+ 
  - [ ] SOON
 
 
@@ -60,6 +49,7 @@ races:
  - [x] GUI Selector/Evolve Menu
  - [x] Custom Messages
  - [x] Chat Format
+ - [x] Effects
  - [x] Support JSON
 
 
@@ -68,6 +58,17 @@ races:
 ```
  - DaRealAqua
 ```
+
+ **Subscribe to my Channel!**
+
+ [YouTube Channel](https://youtube.com/c/AlexItz16%E3%83%84Nspe)
+
+
+ **Join my Discord Servers!**
+
+ [AquaDevs Discord](https://discord.gg/5pxFZHmsC7)
+
+ [Levania Discord](https://discord.gg/Axa33MgXJ9)
 
 
  **📸Images**
