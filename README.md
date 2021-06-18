@@ -39,12 +39,10 @@ races:
 
 
  **📝TODO LIST**
- 
- - [ ] CHANGE RACE
+ - [x] Popup Message
 
 
  **📚What does the plugin have?**
-
  - [x] Create Unlimited Races
  - [x] GUI Selector/Evolve Menu
  - [x] Custom Messages
@@ -60,17 +58,14 @@ races:
 ```
 
  **Subscribe to my Channel!**
-
  [YouTube Channel](https://youtube.com/c/AlexItz16%E3%83%84Nspe)
 
 
  **Join my Discord Servers!**
-
  [AquaDevs Discord](https://discord.gg/5pxFZHmsC7)
-
  [Levania Discord](https://discord.gg/Axa33MgXJ9)
 
 
  **📸Images**
- 
+
  ![Image1](https://cdn.discordapp.com/attachments/508242454173057025/854745103908995082/image0.png)
