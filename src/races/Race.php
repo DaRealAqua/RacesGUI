@@ -42,11 +42,20 @@ class Race{
 
     /**
      * @param Player $player
-     * @return string
+     */
+    public function resetRace(Player $player){
+        $this->plugin->getPlayersCfg()->setNested($player->getName().".race", null);
+        $this->plugin->getPlayersCfg()->setNested($player->getName().".effectLevel", 0);
+        $this->plugin->getPlayersCfg()->setNested($player->getName().".currentKills", 0);
+        $this->plugin->getPlayersCfg()->save();
+    }
+
+    /**
+     * @param Player $player
+     * @return mixed
      */
     public function getRace(Player $player) {
-        $race = $this->plugin->getPlayersCfg()->getNested($player->getName().".race");
-        return $race;
+        return $this->plugin->getPlayersCfg()->getNested($player->getName().".race");
     }
 
     /**

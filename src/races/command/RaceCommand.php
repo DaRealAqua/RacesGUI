@@ -44,21 +44,12 @@ class RaceCommand extends PluginCommand
     public function execute(CommandSender $sender, string $commandLabel, array $args): void
     {
         $messageCfg = $this->plugin->getMessageCfg();
-
+        $gui = $this->plugin->getRaceGUI();
         if(!$sender instanceof Player){
             $inGameMsg = str_replace(["{prefix}", "{line}"], [$this->plugin->getPrefix(), "\n"], $messageCfg->get("in-game"));
             $sender->sendMessage($inGameMsg);
             return;
         }
-        $race = $this->plugin->getRace();
-        foreach ($this->plugin->getRacesCfg()->getNested("races") as $raceId => $data) {
-            if ($race->getRace($sender) == strtolower($raceId)) {
-                $alreadyMsg = str_replace(["{prefix}", "{line}"], [$this->plugin->getPrefix(), "\n"], $messageCfg->get("already"));
-                $sender->sendMessage($alreadyMsg);
-                return;
-            }
-        }
-        $gui = $this->plugin->getRaceGUI();
         $gui->sendRace($sender);
     }
 }

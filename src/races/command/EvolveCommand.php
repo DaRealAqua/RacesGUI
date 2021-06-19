@@ -53,7 +53,7 @@ class EvolveCommand extends PluginCommand
         $race = $this->plugin->getRace();
         foreach ($this->plugin->getRacesCfg()->getNested("races") as $raceId => $data) {
             if ($race->getRace($sender) == null) {
-                $alreadyMsg = str_replace(["{prefix}", "{race}", "{line}"], [$this->plugin->getPrefix(), $data["name"], "\n"], $messageCfg->get("already"));
+                $alreadyMsg = str_replace(["{prefix}", "{race}", "{line}"], [$this->plugin->getPrefix(), $data["name"], "\n"], $messageCfg->get("error"));
                 $sender->sendMessage($alreadyMsg);
                 return;
             }

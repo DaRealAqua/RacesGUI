@@ -47,6 +47,16 @@ class RacesTask extends Task{
             return;
         }
         $race = $this->plugin->getRace();
+        $messageCfg = $this->plugin->getMessageCfg();
+
+        // No Race
+        if ($race->getRace($this->player) == null) {
+            $popupMsg = str_replace(["{prefix}", "{line}"], [$this->plugin->getPrefix(), "\n"], $messageCfg->get("popup"));
+            $this->player->sendPopup($popupMsg);
+            return;
+        }
+
+        // Give player effect's
         foreach ($this->plugin->getRacesCfg()->getNested("races") as $raceId => $data) {
             if ($race->getRace($this->player) == strtolower($raceId)) {
                 $race = $this->plugin->getRace();

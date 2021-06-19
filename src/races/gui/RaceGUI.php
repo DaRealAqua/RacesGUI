@@ -5,8 +5,10 @@ namespace races\gui;
 use races\Main;
 use libs\gui\InvMenu;
 use libs\gui\transaction\InvMenuTransaction;
+use pocketmine\utils\TextFormat as C;
 use pocketmine\item\Item;
 use pocketmine\Player;
+use OutOfRangeException;
 
 class RaceGUI{
 
@@ -16,6 +18,10 @@ class RaceGUI{
     private $evolveData;
 
     private $data;
+
+    const RESET_CNAME = C::RESET . C::RED . "Reset Race";
+
+    const RESET_LORE = C::RESET . C::GRAY . "Click to Reset your Race!";
 
     /**
      * RaceGUI constructor.
@@ -44,6 +50,9 @@ class RaceGUI{
                     ->setCustomName($data["gui"]["item"]["customName"])
                     ->setLore([$data["gui"]["item"]["lore"]]));
             }
+            $inventory->setItem(26, Item::get(236, 14, 1)
+                ->setCustomName(self::RESET_CNAME)
+                ->setLore([self::RESET_LORE]));
         }
         $menu->setListener(InvMenu::readonly(function(InvMenuTransaction $transaction) : void {
             $player = $transaction->getPlayer();
@@ -53,15 +62,23 @@ class RaceGUI{
             $messageCfg = $this->plugin->getMessageCfg();
 
             foreach ($this->plugin->getRacesCfg()->getNested("races") as $raceId => $data) {
-                if ($itemClicked->getName() == $data["gui"]["item"]["customName"]) {
 
+                // Races List
+                if ($itemClicked->getName() == $data["gui"]["item"]["customName"]) {
                     $equipMsg = str_replace(["{prefix}", "{race}", "{line}"], [$this->plugin->getPrefix(), $data["name"], "\n"], $messageCfg->get("equip"));
                     $player->sendMessage($equipMsg);
-
                     $race->setRace($player, $raceId, $data);
-
                     $player->teleport($this->plugin->getServer()->getDefaultLevel()->getSafeSpawn());
+                    $action->getInventory()->onClose($player);
+                    return;
+                }
 
+                // Reset Race
+                if ($itemClicked->getName() == self::RESET_CNAME) {
+                    $resetMsg = str_replace(["{prefix}", "{line}"], [$this->plugin->getPrefix(), "\n"], $messageCfg->get("reset"));
+                    $player->sendMessage($resetMsg);
+                    $race->resetRace($player);
+                    $player->teleport($this->plugin->getServer()->getDefaultLevel()->getSafeSpawn());
                     $action->getInventory()->onClose($player);
                     return;
                 }

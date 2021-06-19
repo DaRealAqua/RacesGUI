@@ -81,20 +81,6 @@ class EventListener implements Listener{
     }
 
     /**
-     * @param PlayerMoveEvent $event
-     */
-    public function onMove(PlayerMoveEvent $event)
-    {
-        $player = $event->getPlayer();
-        $race = $this->plugin->getRace();
-        $gui = $this->plugin->getRaceGUI();
-        if ($race->getRace($player) == null) {
-            $gui->sendRace($player);
-            $event->setCancelled();
-        }
-    }
-
-    /**
      * @param PlayerDeathEvent $event
      */
     public function onDeath(PlayerDeathEvent $event): void
@@ -131,7 +117,7 @@ class EventListener implements Listener{
         foreach ($this->plugin->getRacesCfg()->getNested("races") as $raceId => $data) {
             if ($playerRace == strtolower($raceId)) {
                 if ($playerRace == null)return;
-                $player->setDisplayName(str_replace(["{race_name}", "{player_name}"], [C::colorize($data["name"]), $player->getName()], $cfg->get("chat-format")));
+                $player->setDisplayName(str_replace(["{race_name}", "{player_name}"], [C::colorize($data["name"]), C::colorize($player->getName())], $cfg->get("chat-format")));
             }
         }
     }
