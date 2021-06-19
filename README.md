@@ -40,6 +40,7 @@ races:
 
  **📝TODO LIST**
  - [x] Popup Message
+ - [ ] MORE SOON...
 
 
  **📚What does the plugin have?**
