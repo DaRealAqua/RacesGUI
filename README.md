@@ -59,10 +59,12 @@ races:
 ```
 
  **Subscribe to my Channel!**
+
  [YouTube Channel](https://youtube.com/c/AlexItz16%E3%83%84Nspe)
 
 
  **Join my Discord Servers!**
+
  [AquaDevs Discord](https://discord.gg/5pxFZHmsC7)
  [Levania Discord](https://discord.gg/Axa33MgXJ9)
 
